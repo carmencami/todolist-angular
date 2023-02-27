@@ -8,3 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'todolist';
 }
+export class TareaPendiente {
+  public nombre: string
+  public terminada: boolean
+  constructor(nombre:string, terminada ?: boolean){
+  this.terminada = terminada ? terminada : false;
+  this.nombre = nombre;
+  }
+}
